@@ -441,9 +441,9 @@ body {
   left: 0px;
   height: 400px;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: scroll;
 }
-.main .choose__tour .slider-inner {
+.main .choose__tour .slider .slider-inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -455,7 +455,7 @@ body {
   pointer-events: none;
   padding: 0 24px;
 }
-.main .choose__tour .slider-inner .slide {
+.main .choose__tour .slider .slider-inner .slide {
   width: 312px;
   height: 100%;
   background-color: rebeccapurple;

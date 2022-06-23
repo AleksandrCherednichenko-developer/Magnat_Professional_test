@@ -200,25 +200,25 @@
          left: 0px;
          height: 400px;
          width: 100vw;
-         overflow: hidden;
-      }
-      .slider-inner {
-         position: absolute;
-         top: 0;
-         left: 0;
-         height: 100%;
-         width: calc(312px * 7 + 24px * 8);
-         display: grid;
-         grid-template-columns: repeat(7, 1fr);
-         gap: 24px;
-         pointer-events: none;
-         padding: 0 24px;
-
-         .slide {
-            width: 312px;
+         // overflow: hidden;
+         overflow-x: scroll;
+         .slider-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
             height: 100%;
-            background-color: rebeccapurple;
-            text-align: center;
+            width: calc(312px * 7 + 24px * 8);
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 24px;
+            pointer-events: none;
+            padding: 0 24px;
+            .slide {
+               width: 312px;
+               height: 100%;
+               background-color: rebeccapurple;
+               text-align: center;
+            }
          }
       }
    }

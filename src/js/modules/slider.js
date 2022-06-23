@@ -4,25 +4,6 @@ let slider = document.querySelector('.slider'),
    startx,
    x;
 
-slider.addEventListener('touchstart', (e) => {
-   prassed = true
-   startx = e.offsetX - innerSlider.offsetLeft
-   slider.style.cursor = 'grabbing'
-})
-window.addEventListener('touchend', () => {
-   prassed = false
-})
-slider.addEventListener('touchmove', (e) => {
-   if (!prassed) {
-      return
-   };
-   e.preventDefault()
-   x = e.offsetX
-
-   innerSlider.style.left = `${x - startx}px`
-
-   checkboundary()
-})
 
 slider.addEventListener('mousedown', (e) => {
    prassed = true
