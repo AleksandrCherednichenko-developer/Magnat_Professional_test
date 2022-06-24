@@ -23,6 +23,7 @@
          <h4>Интересные места</h4>
          <div class="items">
             <div class="item">
+               <p class="dopinfo color-1">360°</p>
                <img class="image" src="@img/interesting_places/item-1.png" alt="image">
                <div class="item__info">
                   <h6>Медный всадник</h6>
@@ -41,6 +42,7 @@
                </div>
             </div>
             <div class="item">
+               <p class="dopinfo color-2">Видео</p>
                <img class="image" src="@img/interesting_places/item-2.png" alt="image">
                <div class="item__info">
                   <h6>Родина-мать</h6>
@@ -59,6 +61,7 @@
                </div>
             </div>
             <div class="item">
+               <p class="dopinfo color-3">3D</p>
                <img class="image" src="@img/interesting_places/item-3.png" alt="image">
                <div class="item__info">
                   <h6>Памятник Пушкину</h6>
@@ -77,6 +80,7 @@
                </div>
             </div>
             <div class="item">
+               <p class="dopinfo color-3">3D</p>
                <img class="image" src="@img/interesting_places/item-4.png" alt="image">
                <div class="item__info">
                   <h6>Кремль</h6>
@@ -95,6 +99,7 @@
                </div>
             </div>
             <div class="item">
+               <p class="dopinfo color-1">360°</p>
                <img class="image" src="@img/interesting_places/item-5.png" alt="image">
                <div class="item__info">
                   <h6>Петергоф</h6>
@@ -113,6 +118,7 @@
                </div>
             </div>
             <div class="item">
+               <p class="dopinfo color-3">3D</p>
                <img class="image" src="@img/interesting_places/item-6.png" alt="image">
                <div class="item__info">
                   <h6>Озеро Байкал</h6>
@@ -131,6 +137,7 @@
                </div>
             </div>
             <div class="item">
+               <p class="dopinfo color-1">360°</p>
                <img class="image" src="@img/interesting_places/item-7.png" alt="image">
                <div class="item__info">
                   <h6>Музей Эрарта</h6>
@@ -149,6 +156,7 @@
                </div>
             </div>
             <div class="item">
+               <p class="dopinfo color-2">Видео</p>
                <img class="image" src="@img/interesting_places/item-8.png" alt="image">
                <div class="item__info">
                   <h6>Эрмитаж</h6>
@@ -170,7 +178,75 @@
          <button class="show__more">Посмотреть все места</button>
       </div>
    </section>
-   <section class="virtual__tour"></section>
+
+   <section class="virtual__tour">
+      <div class="container">
+         <h4>Топ посещаемый регионов</h4>
+         <p class="description">Видео, VR, Видео 360°, 3D</p>
+         <div class="card">
+            <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+               <div class="flipper ">
+                  <div class="front">
+                     <p class="number-top">0</p>
+                     <p class="number-center">0</p>
+                     <p class="number-bottom">0</p>
+                  </div>
+                  <div class="back">
+                     <h6>title</h6>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta dolor, nesciunt
+                        deserunt
+                        tenetur consequatur nulla saepe qui exercitationem enim.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+               <div class="flipper ">
+                  <div class="front">
+                     <p class="number-top">1</p>
+                     <p class="number-center">01</p>
+                     <p class="number-bottom">1</p>
+                  </div>
+                  <div class="back">
+                     <h6>title</h6>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta dolor, nesciunt
+                        deserunt
+                        tenetur consequatur nulla saepe qui exercitationem enim.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+               <div class="flipper ">
+                  <div class="front">
+                     <p class="number-top">2</p>
+                     <p class="number-center">02</p>
+                     <p class="number-bottom">2</p>
+                  </div>
+                  <div class="back">
+                     <h6>title</h6>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta dolor, nesciunt
+                        deserunt
+                        tenetur consequatur nulla saepe qui exercitationem enim.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+               <div class="flipper ">
+                  <div class="front">
+                     <p class="number-top">3</p>
+                     <p class="number-center">03</p>
+                     <p class="number-bottom">03</p>
+                  </div>
+                  <div class="back">
+                     <h6>title</h6>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta dolor, nesciunt
+                        deserunt
+                        tenetur consequatur nulla saepe qui exercitationem enim.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
 
    <section class="visited__regions">
       <div class="container">
@@ -215,16 +291,66 @@
 
       <div class="slider">
          <div class="slider-inner">
-            <a href="#" class="slide"></a>
-            <a href="#" class="slide"></a>
-            <a href="#" class="slide"></a>
-            <a href="#" class="slide"></a>
-            <a href="#" class="slide"></a>
-            <a href="#" class="slide"></a>
-            <a href="#" class="slide"></a>
+            <a href="#" class="slide">
+               <div class="icon">
+                  <img src="@img/tour_icon/item-1.svg" alt="">
+               </div>
+               <p>Активные<br>туры</p>
+            </a>
+            <a href="#" class="slide">
+               <div class="icon">
+                  <img src="@img/tour_icon/item-2.svg" alt="">
+               </div>
+               <p>Гастрономические<br>
+                  туры</p>
+            </a>
+            <a href="#" class="slide">
+               <div class="icon">
+                  <img src="@img/tour_icon/item-3.svg" alt="">
+               </div>
+               <p>Экстримальные<br>
+                  туры</p>
+            </a>
+            <a href="#" class="slide">
+               <div class="icon">
+                  <img src="@img/tour_icon/item-4.svg" alt="">
+               </div>
+               <p>Оздоровительные<br>
+                  туры</p>
+            </a>
+            <a href="#" class="slide">
+               <div class="icon">
+                  <img src="@img/tour_icon/item-5.svg" alt="">
+               </div>
+               <p>Круизы</p>
+            </a>
+            <a href="#" class="slide">
+               <div class="icon">
+                  <img src="@img/tour_icon/item-1.svg" alt="">
+               </div>
+               <p>Корпоративным<br>
+                  клиентам</p>
+            </a>
+            <a href="#" class="slide">
+               <div class="icon">
+                  <img src="@img/tour_icon/item-2.svg" alt="">
+               </div>
+               <p>Активные<br>туры</p>
+            </a>
          </div>
       </div>
    </section>
 
-   <section class="subscription"></section>
+   <section class="subscription">
+      <div class="container">
+         <div class="block">
+            <div class="block__info">
+               <h5>Хотите получать видео на почту каждый месяц?</h5>
+               <p>Для этого нужно всего лишь оформить абсолютно бесплатную подписку на нашем портале!</p>
+               <button>Оформить подписку</button>
+            </div>
+            <img src="@img/video-camera.png" alt="image">
+         </div>
+      </div>
+   </section>
 </main>
